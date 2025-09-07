@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweeps Jenni - Your Ultimate Gaming Platform</title>
+
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+/>
+    </head>
     <style>
       * {
         margin: 0;
@@ -380,8 +386,56 @@
         50% { opacity: 1; }
         100% { opacity: 0.7; }
       }
+
+      /* Connect with Us button styles */
+      .connect-btn {
+        display: inline-block;
+        padding: 18px 40px;
+        background: linear-gradient(135deg, #e41f0d, #787573);
+        color: #201E50;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 2rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 20px rgba(134, 157, 150, 0.3);
+        position: relative;
+        overflow: hidden;
+        animation: breathe 3s ease-in-out infinite;
+      }
+
+      /* Breathing animation */
+      @keyframes breathe {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 8px 20px rgba(134, 157, 150, 0.3);
+        }
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 12px 25px rgba(134, 157, 150, 0.5);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 8px 20px rgba(134, 157, 150, 0.3);
+        }
+      }
+
+      .connect-btn:hover {
+        animation: none;
+        transform: scale(1.08);
+        box-shadow: 0 15px 30px rgba(134, 157, 150, 0.6);
+        background: linear-gradient(135deg, #869D96, #A2C3A4);
+      }
+
+      .connect-btn:active {
+        transform: scale(0.98);
+        box-shadow: 0 5px 15px rgba(134, 157, 150, 0.4);
+      }
     </style>
-  </head>
+  
   <body>
     <header>
       <div class="logo">Sweeps<span>&nbsp;Jenni</span></div>
@@ -399,6 +453,7 @@
         <div class="certified-badge" id="certificateBadge"></div>
         <p class="click-enlarge">(click above picture to enlarge)</p>
         <h2 class="certified-title">We Are Certified Agents</h2>
+        <a href="#contact" class="connect-btn">Connect with Us &nbsp;<i class="fab fa-facebook-messenger" aria-hidden="true"></i></a>
       </div>
       <h2 class="section-title">Games Offered</h2>
       <div class="game-grid">
